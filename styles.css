@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.image-container {
+    position: relative; /* Necesario para posicionar botones dentro */
+}
+
+.button {
+    position: absolute; /* Permite posicionar botones encima de la imagen */
+    display: block;
+    width: 50px; /* Cambia según el tamaño deseado */
+    height: 50px; /* Cambia según el tamaño deseado */
+    background-color: rgba(255, 255, 255, 0); /* Botones transparentes */
+    border: none; /* Quita el borde */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0); /* Opcional: efecto al pasar el mouse */
+}
+.long-button {
+    position: absolute;
+    display: block;
+    width: 300px; /* Cambia el ancho para hacerlo más largo */
+    height: 50px; /* Mantenemos el mismo alto */
+    background-color: rgba(255, 255, 255, 0); /* Fondo visible para ver el botón */
+    border: none;
+    cursor: pointer;
+}
